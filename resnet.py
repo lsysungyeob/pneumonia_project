@@ -4,6 +4,7 @@ import torchvision
 class ResNetCNN(nn.Module):
     def __init__(self):
         super(ResNetCNN, self).__init__()
+        
         # ResNet18 모델 불러오기
         self.resnet = torchvision.models.resnet18(pretrained=True)
         # ResNet의 마지막 FC 레이어를 새로운 레이어로 대체
