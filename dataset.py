@@ -9,6 +9,7 @@ import torchvision.transforms.functional as TF
 # ================================
 # 1. 데이터셋 정의
 # ================================
+
 class ITKDataset(Dataset):
     def __init__(self, image_dir, mask_dir, target_size=(256, 256), transform=None):
         self.image_dir = image_dir
